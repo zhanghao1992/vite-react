@@ -1,0 +1,30 @@
+.gantt-container {
+  height: 100%;
+
+  .week_end {
+    background: #f4f7f4 !important;
+  }
+
+  .task-completed {
+    background-color: #07b854;
+  }
+  .task-uncompleted {
+    background-color: #027fff;
+  }
+
+  .task-wrapper {
+    display: flex;
+    position: relative;
+    height: 100%;
+
+    .task-item-dot {
+      position: absolute;
+      left: 20px;
+      width: 10px;
+      height: 20px;
+      background-color: #07b854;
+      border-radius: 50%;
+      // cursor: ew-resize;
+    }
+  }
+}
