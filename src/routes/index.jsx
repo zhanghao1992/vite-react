@@ -2,7 +2,7 @@
  * @Author: 张浩 386708307@qq.com
  * @Date: 2024-11-03 12:04:56
  * @LastEditors: 张浩 386708307@qq.com
- * @LastEditTime: 2026-02-09 11:10:44
+ * @LastEditTime: 2026-02-09 11:19:11
  * @FilePath: /vite-react/src/routes/index.jsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
         element: <Supabasec />,
       },
       {
-        path: "tinymce",
+        path: "tinymce-editor",
         element: <Tinymce />,
       },
 

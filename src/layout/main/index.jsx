@@ -5,7 +5,7 @@ import {
   useLocation,
   useParams,
   useSearchParams,
-  useNavigate
+  useNavigate,
 } from "react-router-dom";
 import { Button, Space } from "antd";
 import style from "./index.module.less";
@@ -41,8 +41,6 @@ const nav = [
 ];
 
 const MainLayout = () => {
-
-
   return (
     <div className={style["m-layout"]}>
       <div className={style["m-header"]}>
