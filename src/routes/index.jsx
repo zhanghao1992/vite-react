@@ -2,7 +2,7 @@
  * @Author: 张浩 386708307@qq.com
  * @Date: 2024-11-03 12:04:56
  * @LastEditors: 张浩 386708307@qq.com
- * @LastEditTime: 2025-12-18 14:23:23
+ * @LastEditTime: 2026-02-09 11:10:44
  * @FilePath: /vite-react/src/routes/index.jsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -21,6 +21,7 @@ import Gantt from "../pages/gantt";
 import RCGantt from "../pages/rc-gantt";
 import MyHooks from "../pages/myhooks";
 import Tinymce from "../pages/tinymce";
+import WangEditor from "../pages/wang-editor";
 import Gis from "../pages/gis";
 import Supabasec from "../pages/supabasec";
 import ErrorPage from "../pages/ErrorBoundary";
@@ -75,10 +76,15 @@ const router = createBrowserRouter([
         element: <Supabasec />,
       },
       {
-        // path: "tinymce",
-        path: "",
+        path: "tinymce",
         element: <Tinymce />,
       },
+
+      {
+        path: "wang-editor",
+        element: <WangEditor />,
+      },
+
       // {
       //   path: "gantt2",
       //   element: <Gantt2 />,
@@ -91,7 +97,7 @@ const router = createBrowserRouter([
       {
         path: "react-query",
         element: <ReactQuery />,
-      }
+      },
     ],
   },
   // 仍旧配置路由重定向

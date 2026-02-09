@@ -1,14 +1,23 @@
-import React from "react";
-
+/*
+ * @Author: 张浩 386708307@qq.com
+ * @Date: 2025-12-22 09:24:45
+ * @LastEditors: 张浩 386708307@qq.com
+ * @LastEditTime: 2026-02-09 09:46:07
+ * @FilePath: /vite-react/src/pages/react-query/index.jsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { getUser, updateUser } from "./api";
 import {
   QueryClient,
   QueryClientProvider,
+  queryOptions,
   useQuery,
   useMutation,
   useQueryClient,
+  useQueries,
 } from "@tanstack/react-query";
 import { Button, Space } from "antd";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +25,7 @@ const ReactQuery = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Example />
+      <ReactQueryDevtools initialIsOpen={false}></ReactQueryDevtools>
     </QueryClientProvider>
   );
 };
@@ -31,6 +41,7 @@ const Example = () => {
   } = useQuery({
     queryKey: ["getUser"],
     queryFn: getUser,
+    staleTime: 10 * 1000,
   });
 
   const mutation = useMutation({
@@ -61,6 +72,7 @@ const Example = () => {
         <Button
           type="primary"
           onClick={() => {
+            queryClient.invalidateQueries({ queryKey: ["getUser"] });
             console.log("再查询");
           }}
         >

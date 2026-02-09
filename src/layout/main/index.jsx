@@ -30,6 +30,14 @@ const nav = [
     name: "gantt",
     path: "/gantt",
   },
+  {
+    name: "wang-editor",
+    path: "/wang-editor",
+  },
+  {
+    name: "tinymce-editor",
+    path: "/tinymce-editor",
+  },
 ];
 
 const MainLayout = () => {
