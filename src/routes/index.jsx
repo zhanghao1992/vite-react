@@ -2,7 +2,7 @@
  * @Author: 张浩 386708307@qq.com
  * @Date: 2024-11-03 12:04:56
  * @LastEditors: 张浩 386708307@qq.com
- * @LastEditTime: 2026-02-09 11:19:11
+ * @LastEditTime: 2026-03-12 09:38:18
  * @FilePath: /vite-react/src/routes/index.jsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -27,6 +27,7 @@ import Supabasec from "../pages/supabasec";
 import ErrorPage from "../pages/ErrorBoundary";
 import ReactQuery from "../pages/react-query";
 import Gantt2 from "../pages/gantt2";
+import Pgc from "../pages/pgc";
 
 // 定义路由表
 const router = createBrowserRouter([
@@ -90,6 +91,10 @@ const router = createBrowserRouter([
       //   element: <Gantt2 />,
       // },
 
+      {
+        path: "pgc",
+        element: <Pgc />,
+      },
       {
         path: "error-boundary",
         element: <ErrorPage />,
