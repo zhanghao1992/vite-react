@@ -28,6 +28,7 @@ import ErrorPage from "../pages/ErrorBoundary";
 import ReactQuery from "../pages/react-query";
 import Gantt2 from "../pages/gantt2";
 import Pgc from "../pages/pgc";
+import DndDemo from "../pages/dnd-demo";
 
 // 定义路由表
 const router = createBrowserRouter([
@@ -102,6 +103,10 @@ const router = createBrowserRouter([
       {
         path: "react-query",
         element: <ReactQuery />,
+      },
+      {
+        path: "dnd-demo",
+        element: <DndDemo />,
       },
     ],
   },

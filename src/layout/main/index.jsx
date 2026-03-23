@@ -38,6 +38,10 @@ const nav = [
     name: "tinymce-editor",
     path: "/tinymce-editor",
   },
+  {
+    name: "dnd-demo",
+    path: "/dnd-demo",
+  },
 ];
 
 const MainLayout = () => {
