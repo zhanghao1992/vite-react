@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@dimakorotkov/tinymce-mathjax": "^1.0.11",
     "@supabase/supabase-js": "^2.86.2",
     "@tailwindcss/vite": "^4.1.18",
@@ -30,6 +31,7 @@
     "dhtmlx-gantt": "^9.0.2",
     "ethers": "^6.13.4",
     "kity": "^2.0.4",
+    "lodash": "^4.17.23",
     "mathjax": "^3.2.2",
     "mathquill": "0.10.1-a",
     "mockjs": "^1.1.0",

@@ -53,29 +53,55 @@ Development server proxies `/api/*` requests to `https://www.mocklib.com` via Vi
 
 ### Styling Approach
 Mixed approach used across the application:
-- **Ant Design**: Primary component library
-- **Tailwind CSS**: Utility classes (v4+)
-- **CSS Modules**: For component-scoped styles (`.module.less`, `.module.css`)
+- **Ant Design**: Primary component library (Chinese locale configured)
+- **Tailwind CSS**: Utility classes (v4+ with Vite plugin)
+- **CSS Modules**: For component-scoped styles (`.module.less` for layouts, `.module.css` for components)
 - **Global CSS**: `src/assets/css/app.css`
+
+### Formula & Math Editing
+The project demonstrates multiple approaches to formula/math editing:
+- **MathQuill**: Interactive math formula editor in `src/components/RichEditor/FormulaEditor/`
+- **MathJax**: Math rendering engine, used with TinyMCE
+- **Wiris MathType**: Commercial formula editor plugin for TinyMCE
+- **TinyMCE MathJax Plugin**: Custom plugin integration at `src/pages/tinymce/plugin.min.js`
 
 ### Error Handling
 React Error Boundary is implemented at `src/pages/ErrorBoundary/` and can wrap components for error isolation.
+
+### Internationalization
+Ant Design is configured with **Chinese locale (zhCN)** globally in `src/main.jsx`, affecting date formats, validation messages, and other locale-aware components.
+
+### Shared Components
+Reusable components are organized in `src/components/`:
+- **Gantt**: Shared Gantt chart components
+- **RichEditor**: Rich text editing with formula support (MathQuill integration)
+
+### pnpm Workspace
+The project uses pnpm workspace with build optimizations configured in `pnpm-workspace.yaml` to improve build performance for certain dependencies.
 
 ## Key Libraries Demonstrated
 
 | Library | Purpose | Location |
 |---------|---------|----------|
-| TinyMCE | Rich text editor | `src/pages/tinymce/` |
+| TinyMCE | Rich text editor with MathJax | `src/pages/tinymce/` |
+| Wang Editor | Rich text editor | `src/pages/wang-editor/` |
+| MathQuill | Formula/math editor | `src/components/RichEditor/FormulaEditor/` |
+| MathJax | Math rendering | Used with TinyMCE |
+| Wiris MathType | Formula editor plugin | Used with TinyMCE |
 | React Query | Server state management | `src/pages/react-query/` |
 | AHooks | React hooks utility | `src/pages/ahooks/` |
 | Alova | HTTP client | `src/pages/alova/` |
 | DHTMLX Gantt | Gantt charts | `src/pages/gantt/` |
+| RC-Gantt | Alternative Gantt implementation | `src/pages/rc-gantt/` |
+| Custom Gantt | Custom Gantt implementation | `src/pages/gantt2/` |
 | Supabase | Backend integration | `src/pages/supabasec/` |
 | Ethers | Ethereum | Used in GIS pages |
 
 ## Code Conventions
 
-- **Language**: Code comments and UI use Chinese
-- **File headers**: Many files have koroFileHeader-style comments with author info
+- **Language**: Code comments and UI text are in Chinese
+- **File headers**: Many files use koroFileHeader-style comments with author info (张浩)
 - **Component exports**: Default exports preferred
 - **Route imports**: All page components imported in `src/routes/index.jsx`
+- **ESLint**: Configured for React 18.3 with hooks and refresh plugins
+- **Module system**: ES modules (type: "module" in package.json)
