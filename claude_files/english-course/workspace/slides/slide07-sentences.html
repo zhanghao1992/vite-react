@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-image: url('bg-cream.png');
+  background-size: cover;
+}
+.page {
+  width: 720pt; height: 405pt;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #DDA0DD;
+  padding: 7pt 20pt;
+  display: flex; align-items: center;
+  border-radius: 0 0 14pt 14pt;
+}
+.content {
+  padding: 6pt 16pt;
+  flex: 1;
+  display: flex;
+  gap: 8pt;
+}
+.col { flex: 1; display: flex; flex-direction: column; gap: 4pt; }
+.pattern-box {
+  background: #FFFFFF;
+  border-radius: 10pt;
+  padding: 4pt 8pt;
+  border-left: 3pt solid #5EA8A7;
+}
+.pattern-box.p2 { border-left-color: #E8739E; }
+.pattern-box.p3 { border-left-color: #F0A030; }
+.label {
+  border-radius: 5pt;
+  padding: 1pt 5pt;
+  display: inline-block;
+  margin-bottom: 1pt;
+  background: #E0F4F4;
+}
+.label.p2 { background: #FFF0F5; }
+.label.p3 { background: #FFF8E8; }
+.sentence-card {
+  background: #FFFFFF;
+  border-radius: 8pt;
+  padding: 3pt 8pt;
+  border: 2pt solid #F0E0F5;
+}
+.sentence-card.highlight {
+  border-color: #FFB6C1;
+  background: #FFF5F8;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <img src="star-rainbow.png" style="width: 18pt; height: 18pt; margin-right: 6pt;">
+    <h2 style="color: #FFFFFF; font-size: 22pt; margin: 0;">重点句型 Key Sentences</h2>
+  </div>
+  <div class="content">
+    <div class="col">
+      <div class="pattern-box">
+        <div class="label"><p style="color: #5EA8A7; font-size: 10pt; margin: 0;"><b>Pattern 1</b></p></div>
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>It's + 时间.</b></p>
+        <p style="color: #A090B8; font-size: 11pt; margin: 1pt 0 0 0;">用于表达现在几点</p>
+      </div>
+      <div class="sentence-card">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">It's 7 o'clock. <span style="color: #A090B8; font-size: 11pt;">7点了。</span></p>
+      </div>
+      <div class="sentence-card">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">It's 8:30. <span style="color: #A090B8; font-size: 11pt;">8点30分。</span></p>
+      </div>
+      <div class="sentence-card">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">What time is it? <span style="color: #A090B8; font-size: 11pt;">几点了？</span></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="pattern-box p2">
+        <div class="label p2"><p style="color: #E8739E; font-size: 10pt; margin: 0;"><b>Pattern 2</b></p></div>
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>It's time to + 动词.</b></p>
+        <p style="color: #A090B8; font-size: 11pt; margin: 1pt 0 0 0;">表示"该做某事了"</p>
+      </div>
+      <div class="sentence-card">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">It's time to get up.</p>
+      </div>
+      <div class="sentence-card">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">It's time to go to school.</p>
+      </div>
+      <div class="pattern-box p3">
+        <div class="label p3"><p style="color: #F0A030; font-size: 10pt; margin: 0;"><b>Pattern 3</b></p></div>
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>It's time for + 名词.</b></p>
+        <p style="color: #A090B8; font-size: 11pt; margin: 1pt 0 0 0;">表示"该做某事了"(接名词)</p>
+      </div>
+      <div class="sentence-card highlight">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;">It's time for English class.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

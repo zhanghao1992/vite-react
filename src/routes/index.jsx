@@ -2,7 +2,7 @@
  * @Author: 张浩 386708307@qq.com
  * @Date: 2024-11-03 12:04:56
  * @LastEditors: 张浩 386708307@qq.com
- * @LastEditTime: 2026-03-12 09:38:18
+ * @LastEditTime: 2026-06-22 13:31:07
  * @FilePath: /vite-react/src/routes/index.jsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -26,8 +26,10 @@ import Gis from "../pages/gis";
 import Supabasec from "../pages/supabasec";
 import ErrorPage from "../pages/ErrorBoundary";
 import ReactQuery from "../pages/react-query";
+import ReactQueryAdvanced from "../pages/react-query-advanced";
 import Gantt2 from "../pages/gantt2";
 import Pgc from "../pages/pgc";
+import DnDKit from "../pages/dnd-kit";
 import DndDemo from "../pages/dnd-demo";
 
 // 定义路由表
@@ -107,6 +109,14 @@ const router = createBrowserRouter([
       {
         path: "dnd-demo",
         element: <DndDemo />,
+      },
+      {
+        path: "react-query-advanced",
+        element: <ReactQueryAdvanced />,
+      },
+      {
+        path: "dnd-kit",
+        element: <DnDKit />,
       },
     ],
   },

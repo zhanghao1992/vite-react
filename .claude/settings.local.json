@@ -5,7 +5,14 @@
       "Bash(pnpm list:*)",
       "Bash(pnpm search:*)",
       "Bash(curl:*)",
-      "Bash(pnpm add:*)"
+      "Bash(pnpm add:*)",
+      "Bash(git config:*)",
+      "Bash(rm:*)",
+      "Bash(node create-vocab-ppt.js)",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(node create-vocab-ppt.cjs)",
+      "Bash(npm init:*)"
     ]
   }
 }

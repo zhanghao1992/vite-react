@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-image: url('bg-cream.png');
+  background-size: cover;
+}
+.page {
+  width: 720pt; height: 405pt;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #FFB6C1;
+  padding: 7pt 20pt;
+  display: flex; align-items: center;
+  border-radius: 0 0 14pt 14pt;
+}
+.tag {
+  background: #FFFFFF;
+  border-radius: 10pt;
+  padding: 2pt 8pt;
+  margin-right: 6pt;
+}
+.content {
+  padding: 6pt 16pt;
+  flex: 1;
+  display: flex;
+  gap: 8pt;
+}
+.scene-panel {
+  background: #FFFFFF;
+  border-radius: 14pt;
+  padding: 6pt 10pt;
+  flex: 1;
+  display: flex; flex-direction: column;
+  border: 2pt solid #FFE4E9;
+}
+.scene-label {
+  background: #FFB6C1;
+  border-radius: 6pt;
+  padding: 2pt 6pt;
+  display: inline-block;
+  margin-bottom: 4pt;
+  align-self: flex-start;
+}
+.time-badge {
+  background: #DDA0DD;
+  border-radius: 16pt;
+  padding: 2pt 8pt;
+  display: inline-block;
+  margin-bottom: 4pt;
+  align-self: center;
+}
+.d-bubble {
+  background: #F0FAF8;
+  border-radius: 10pt;
+  padding: 4pt 8pt;
+  margin-bottom: 3pt;
+}
+.d-bubble.right {
+  background: #FFF0F5;
+  align-self: flex-end;
+  max-width: 85%;
+}
+.note-box {
+  background: #FFF8E8;
+  border-radius: 6pt;
+  padding: 4pt 6pt;
+  margin-top: auto;
+  border: 1pt dashed #F0A030;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="tag">
+      <p style="color: #E8739E; font-size: 11pt; margin: 0;"><b>Let's talk</b></p>
+    </div>
+    <h2 style="color: #FFFFFF; font-size: 22pt; margin: 0;">场景一：早上起床 Morning Routine</h2>
+  </div>
+  <div class="content">
+    <div class="scene-panel">
+      <div class="scene-label">
+        <p style="color: #FFFFFF; font-size: 11pt; margin: 0;">Scene A - Getting Up</p>
+      </div>
+      <div class="time-badge">
+        <p style="color: #FFFFFF; font-size: 14pt; margin: 0;"><b>7:00 a.m.</b></p>
+      </div>
+      <div class="d-bubble">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>Mum:</b> It's 7 o'clock. It's time to get up!</p>
+      </div>
+      <div class="d-bubble right">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>Mum:</b> Breakfast is ready!</p>
+      </div>
+      <div class="note-box">
+        <p style="color: #E8A030; font-size: 12pt; margin: 0;"><b>Key:</b> It's time to + 动词原形</p>
+      </div>
+    </div>
+    <div class="scene-panel">
+      <div class="scene-label">
+        <p style="color: #FFFFFF; font-size: 11pt; margin: 0;">Scene B - Going to School</p>
+      </div>
+      <div class="time-badge">
+        <p style="color: #FFFFFF; font-size: 14pt; margin: 0;"><b>7:30 a.m.</b></p>
+      </div>
+      <div class="d-bubble">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>Girl:</b> It's time to go to school. Bye, Mum!</p>
+      </div>
+      <div class="d-bubble right">
+        <p style="color: #5B4A7A; font-size: 14pt; margin: 0;"><b>Mum:</b> Bye. Have a nice day!</p>
+      </div>
+      <div class="note-box">
+        <p style="color: #E8A030; font-size: 12pt; margin: 0;"><b>Key:</b> Have a nice day! 祝你有美好的一天</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
